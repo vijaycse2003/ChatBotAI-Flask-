@@ -1,0 +1,761 @@
+{
+   "intents": [
+      {
+         "tag": "greeting",
+         "patterns": [
+            "Hi",
+            "How are you?",
+            "Is anyone there?",
+            "Hello",
+            "Good day",
+            "What's up",
+            "how are ya",
+            "heyy",
+            "whatsup",
+            "??? ??? ??"
+         ],
+         "responses": [
+            "Hello!",
+            "Good to see you again!",
+            "Hi there, how can I help?"
+         ]
+      },
+      {
+         "tag": "goodbye",
+         "patterns": [
+            "cya",
+            "see you",
+            "bye bye",
+            "See you later",
+            "Goodbye",
+            "I am Leaving",
+            "Bye",
+            "Have a Good day",
+            "talk to you later",
+            "ttyl",
+            "i got to go",
+            "gtg"
+         ],
+         "responses": [
+            "Sad to see you go :(",
+            "Talk to you later",
+            "Goodbye!",
+            "Come back soon",
+            "Bye...Have a nice day!"
+         ]
+      },
+      {
+         "tag": "name",
+         "patterns": [
+            "name",
+            "your name",
+            "do you have a name",
+            "what are you called",
+            "what is your name",
+            "what should I call you",
+            "whats your name?",
+            "what are you",
+            "who are you",
+            "who is this",
+            "what am i chatting to",
+            "who am i taking to",
+            "what are you"
+         ],
+         "responses": [
+            "You can call me Mind Reader.",
+            "I'm Mind Reader",
+            "I am a Chatbot.",
+            "I am your helper",
+            "I am a Vijay Kumar(Assistant)"
+         ]
+      },
+      {
+         "tag": "hours",
+         "patterns": [
+            "timing of college",
+            "what is college timing",
+            "working days",
+            "when are you guys open",
+            "what are your hours",
+            "hours of operation",
+            "when is the college open",
+            "college timing",
+            "what about college timing",
+            "is college open on saturday",
+            "tell something about college timing",
+            "what is the college  hours",
+            "when should i come to college",
+            "when should i attend college",
+            "what is my college time",
+            "college timing",
+            "timing college"
+         ],
+         "responses": [
+            "College is open 9.20am-4.30pm Monday-Saturday!"
+         ]
+      },
+      {
+         "tag": "number",
+         "patterns": [
+            "more info",
+            "contact info",
+            "how to contact college",
+            "college telephone number",
+            "college number",
+            "What is your contact no",
+            "Contact number?",
+            "how to call you",
+            "College phone no?",
+            "how can i contact you",
+            "Can i get your phone number",
+            "how can i call you",
+            "phone number",
+            "phone no",
+            "call",
+            "Aamec College contacts",
+            "Aamec contacts",
+            "Contacts of Aamec College"
+         ],
+         "responses": [
+           "Landline 04374-232516<br>GirlsHostelGate:9489978479<br>Principals Office 94899 78472 <br>BoysHostel Gate9489978471<br> MainGate:9489978477<br> Warden/BoysHostel:9489978470<br>BankGate 9489978478<br>Warden/GirlsHostel:9489978469"
+         ]
+      },
+      {
+         "tag": "principle",
+         "patterns": [
+            " What is our principal name ",
+            "Head of Aamec college",
+            "Who is the principal of Aamec?",
+            "principal name?"
+         ],
+         "responses": [
+            "Dr.S.N. Ramasamy is having 20 years of experience in teaching and Research besides 11 years of experience in building construction & infrastructure management"
+         ]
+      },
+      {
+         "tag": "aboutclg",
+         "patterns": [
+            "Tell about Aamec",
+            "About Aamec college",
+            "Information about Aamec college",
+            "Aamec",
+            "Aamec details"
+         ],
+         "responses": [
+            "Anjalai Ammal Mahalingam Engineering College (AAMEC) stands, as a beacon light in brick and mortar, men and materials, involved in learning and teaching of Technical education. It fulfils its illustrious founder and veteran railway union leader Shri.M.Namasivayam's scintillating dream and ennobling vision and to establish a temple of learning far from the maddening crowd of the cities and yet having all the facilities of a well developed urban campus imparting technical education at international standards, accessible to students from far and near, rich and poor alike"
+         ]
+      },
+      {
+         "tag": "Founder",
+         "patterns": [
+            "Who is the founder of Aamec",
+            "What is Name of Aamec founder",
+            "Founder",
+            "Founder History"
+         ],
+         "responses": [
+            "Thiru.M. Namasivayam Founder-Chairman of Anjalai Ammal-Mahalingam Engineering College was born on March 15, 1927 at Thanjavur in the South Indian state of Tamil Nadu. He was blessed with three daughters and a son. He started his career as a clerk in the Railway department. Due to his Zeal and hard work, he acquitted himself with credit and earned the appreciation of senior officers. His indefatigable energy and administrative ability marked him out for appointment as auditor in Southern Railway. His thoroughness and devotion to duty marked him to the prestigious position of General Secretary, Southern Railway Mazdoor Union. As a General Secretary, he had to toil hard to uplift the living standard and working environment of Railway Mazdoors."
+         ]
+      },
+      {
+         "tag": "location",
+         "patterns": [
+            "Aamec Location",
+            "Location",
+            "What is the Aamec location",
+            "Where is the Aamec located",
+            "Aamec college map location ",
+            "Aamec college direction"
+         ],
+         "responses": [
+            "Location https://goo.gl/maps/jpZjz6vtbFhjouyT9 <br>Located at <br> NH67 Tanjore-Velankanni Main Road, Kovilvenni - 614 403, Tamil Nadu, India"
+         ]
+      },
+      {
+         "tag": "HOD",
+         "patterns": [
+            "CSE Hod",
+            "Computer science engineering hod",
+            "Who is the CSE hod ",
+            "What is the CSE hod name",
+            "HOD of cse"
+         ],
+         "responses": [
+            "Dr.K.Velmurugan M.E.,Ph.D –  Head of the CSE department"
+         ]
+      },
+      {
+         "tag": "Vision & Mission",
+         "patterns": [
+            "Vision & mission of Aamec",
+            "Aamec vision & mission",
+            "Vision & mission",
+            "What is the vision of the college",
+            "What is the mission of the college"
+         ],
+         "responses": [
+            "Vision:<br>To become a centre of excellence by imparting high quality technical education and produce competent engineers with ethical, environmental and social values Mission:<br>Facilitating high quality technical education through adequate infrastructure and eminent faculty members.  Providing technical education to rural youth. Promoting research and development activities.Developing industry – Institution interaction and inculcating a spirit ofentrepreneurship through sustained efforts. Creating global environmental awareness among the students"
+         ]
+      },
+      {
+         "tag": "PEOS",
+         "patterns": [
+            "What is PEOs of cse",
+            "PEOs of cse ",
+            "CSE PEOs",
+            "What is Programme Educational Objectives of cse",
+            "Programme Educational Objectives of cse"
+         ],
+         "responses": [
+            "Programme Educational Objectives (PEOs)<br>PEO1Toapply the knowledge gained in mathematics, basicsciences and core concept of computer science and engineering in real-time applications.<br>PEO2.To enable graduates to pursue higher education and research, or have a successful career in industries associated with computer science and engineering or as entrepreneurs.<br>PEO3.To ensure the graduates will have the ability and attitude to adapt to emerging technological changes"
+         ]
+      },
+      {
+         "tag": "PSO",
+         "patterns": [
+            "What is PSOs of cse",
+            "PSOs of cse",
+            "CSE PSOs",
+            "What is Programme specific Objectives of cse",
+            "Programme specific Objectives of cse"
+         ],
+         "responses": [
+            "Programme Specific Objectives(PSOs)<br>PSO1 Foundation of computational technologies:To analyze, design and develop computing solutions by applying foundational concepts of computer science and engineering<br>PSO2.Software development process: To apply software engineering principles and practices for developing quality software for scientific and business applications.<br>PSO3.Deployment of new technologies: To adapt to emerging Information and Communication Technologies (ICT) to innovate ideas and solutions to existing/novel problems"
+         ]
+      },
+      {
+         "tag": "POs",
+         "patterns": [
+            "What is POs of cse?",
+            "POs of cse",
+            "CSE POs",
+            "What is Programme Outcomes of cse",
+            "Programme Outcomes of cse"
+         ],
+         "responses": [
+            "PO1. Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.<br>PO2. Problem analysis: Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.<br>PO3. Design/development of solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.<br>PO4. Conduct investigations of complex problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.<br>PO5. Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations<br>PO6. The engineer and society: Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.<br>PO7. Environment and sustainability: Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.<br>PO8. Ethics: Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.<br>PO9. Individual and team work: Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.<br>PO10. Communication: Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.<br>PO11. Project management and finance: Demonstrate knowledge and understanding of the engineering and management principles and apply these to one's own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.<br>PO12. Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change"
+         ]
+      },
+      {
+         "tag": "Nocourse",
+         "patterns": [
+            "Number of Aamec courses",
+            "How many Aamec courses"
+         ],
+         "responses": [
+            "Under graduate:7<br> Post graduate:1"
+         ]
+      },
+      {
+         "tag": "UGcourse",
+         "patterns": [
+            "What are Approved UG courses",
+            "Approved UG courses",
+            "UG courses",
+            "Undergraduate courses",
+            "What are the UG courses",
+            "UG departments",
+            "Undergraduate departments",
+            "UG Available departments",
+            "What are UG departments"
+         ],
+         "responses": [
+            "B.E. Mechanical Engineering<br>B.E. Computer Science and Engineering<br>B.E. Electrical and Electronics Engineering<br> B.E. Electronics and Communication Engineering<br>B.Tech. –Chemical Engineering<br>B.Tech. –Information Technology <br>B.E, Civil Engineering"
+         ]
+      },
+      {
+         "tag": "PGcourse",
+         "patterns": [
+            "What are Approved PG courses",
+            "Approved PG courses",
+            "PG courses",
+            "Postgraduate courses",
+            "What are the PG courses",
+            "PG departments",
+            "Postgraduate departments",
+            "PG Available departments",
+            "What are PG departments"
+         ],
+         "responses": [
+            "Master of Computer Applications(MCA)"
+         ]
+      },
+      {
+         "tag": "ManagementFees",
+         "patterns": [
+            "CSE College fees of Aamec 2022 and 2024 Management",
+            "Fees of Aamec 2023 and 2024 cse Management quota",
+            "What is fees of 2023 and 2024 cse Management quota",
+            "Management quota fees of 2022 and 2023",
+            "CSE Management fees"
+         ],
+         "responses": [
+            "Total : 99,000"
+         ]
+      },
+      {
+         "tag": "GoverFees",
+         "patterns": [
+            "Fees of Aamec 2023 and 2024 cse Government quota",
+            "What is fees of 2023 and 2024 cse Government quota",
+            "Cse Government quota fees of 2022 and 2023",
+            "CSE government quota"
+         ],
+         "responses": [
+            "Total : 59,000"
+         ]
+      },
+      {
+         "tag": "FirstGradFees",
+         "patterns": [
+            "Fees of Aamec 2023 and 2024 cse  Government quota and first graduate",
+            "What is fees of 2023 and 2024 cse Government quota and first graduate",
+            "CSE Management quota and first graduate fees of 2022 and 2023",
+            "CSE government quota and first graduate"
+         ],
+         "responses": [
+            "Total : 34,000"
+         ]
+      },
+      {
+         "tag": "SC/STFees",
+         "patterns": [
+            "What is fees of 2023 and 2024 cse Government quota , first graduate and sc/st",
+            "Fees of Aamec 2023 and 2024 cse Government quota,first graduate and sc/st",
+            "CSE Management quota ,first graduate and sc/st fees of 2022 and 2023",
+            "CSE government quota, frst graduate and sc/st"
+         ],
+         "responses": [
+            "Total : 9,000         "
+         ]
+      },
+      {
+         "tag": "FeesStru",
+         "patterns": [
+            "CSE fees structure",
+            "What is cse fees structure?"
+         ],
+         "responses": [
+            " CSE Management fees:99000<br>CSE government quota:59,000<br>CSE government quota and first graduate:34,000<br>CSE government quota frst graduate and sc/st:99,000<br>"
+         ]
+      },
+      {
+         "tag": "BusFeesStructure",
+         "patterns": [
+            "Bus fees structure",
+            "How much bus fees",
+            "  Bus routes",
+            " Bus routes and fees",
+            "Bus starting and pickup points"
+         ],
+         "responses": [
+            "Bus Routes:<br>1.Thanjavur(Srinivasapuram & Central Library)Srinivasapuram Central Library Santhi Kamala Theater Zone Vandikara Street Tholkappiar Square Gurudayal Sharma Mariamman Kovil bypass Gnanam Nagar Mariamman Kovil PKT By-pass Rs 20000 Pullavrnatham Rs.18000 Kovilur Poondi Rs.14000 Saliyamangalam Rs.12,000 Ammapet Rs.8000 <br>2.Thanjavur Sinthamani (Medical College)Sinthamani EB Colony Sundaram Paint stopping,Medical College, Eswari Naga,Municipal Colony Annamalai Kalyana Mandapam, Mangalapuram LIC Colony Balaji nagar,Ganapathy Nagar Rs.22,000 <br>3.Thanjavur New Bus Stand New Bustand RR nagar, New Housing Unit Cauvery Nagar Kulandai Yesu church Old housing unit,Yagappa nagar,Arulananda Ammal nagar,Anna nagar,RMS colony EB Colony,N.K.Road by pass Rs.22,000<br>4.Kumbakonam Kumbakonam Bus stand Sakottai,Rs.20,000 Maruthanalllur Thippurajapuram Rs.18,000 Madakudi & PapanasamRs.17,000Valangaiman Rs.17000 Alangudi & ThirukarukavurRs.14000 Ayyampettai Rs.20,000 Irumbuthalai,Kalanchery Rs.13000<br>5.Thiruvarur,Thiruvarur temple vasan cafe(Bus stand)Rs.22,000 Ammaiyappan muganthanur,Lakshmangudi Rs.18000 Pothakudi,Atthikadai Rs.16000 Koradacherry Rs.14,000 Kilariyam Rs.12000 Needamangalam Rs.8000<br>6.Mannargudi,Keelapalam,New Street,Mannargudi Bus stand Rs.16,000 Rajappan Chavady Royapuram Rs.12000Poovanur Rs.10000"
+         ]
+      },
+      {
+         "tag": "HostelDetails",
+         "patterns": [
+            "Hostel",
+            "Hostel details",
+            "Hostel facilities"
+         ],
+         "responses": [
+            "With the intention of providing the students with their comfort, separate hostels for Boys & Girls with cozy and aesthetically designed rooms and round the clock security are provided within the campus<br>The hostels provide a salubrious ambience and a feel good climate and are equipped with all amenities for living, dining and recreation that makes each inmate feel at home.<br>Boys Hostel has more than 70 rooms spread over in two floors and accommodates around 200 students and Girls Hostel has 57 rooms spread over in one floor and accommodates around 200 students"
+         ]
+      },
+      {
+         "tag": "LabDetails",
+         "patterns": [
+            "CSE lab",
+            "How many cse lab facilities",
+            "What are the CSE Lab"
+         ],
+         "responses": [
+            "Free & Open source Lab<br>Data science Lab<br>Artificial intelligence Lab"
+         ]
+      },
+      {
+         "tag": "StaffDetails",
+         "patterns": [
+            "CSE staffs",
+            "How many cse staffs",
+            "CSE staffs details",
+            "Staffs of CSE department"
+         ],
+         "responses": [
+            "<br>Dr. G. NanthaKumar     Professor/CSE (placement and training)<br>Dr. T. Vigneshwari ASP/CSE <br>Mr. R. Arunachalam      AP/CSE <br>Mr. G. Kalaiselvi   AP/CSE<br>Mr. K. Pazhanivel             AP/CSE<br> Mr. P. Manikandaprabu    AP/CSE<br>Mr. Farjana Farvin AP/CSE<br>Mrs.P.Elakkiya <br>32-61:Mrs.K.Karthika<br> 62-701:Mrs.K.Nithiya<br>  Final year students are instructed meet your faculty advisor."
+         ]
+      },
+      {
+         "tag": "event",
+         "patterns": [
+            "events organised",
+            "list of events",
+            "list of events organised in college",
+            "list of events conducted in college",
+            "What events are conducted in college",
+            "Are there any event held at college",
+            "Events?",
+            "functions",
+            "what are the events",
+            "tell me about events",
+            "what about events"
+         ],
+         "responses": [
+            "For event detail visit <a target='https://aamec.in'> here</a>"
+         ]
+      },
+      {
+         "tag": "floors",
+         "patterns": [
+            "size of campus",
+            "building size",
+            "How many floors does college have",
+            "floors in college",
+            "floors in college",
+            "how tall is UNI's College of Engineering college building",
+            "floors"
+         ],
+         "responses": [
+            "My College has total 7 buildings. each buildings 3 floors "
+         ]
+      },
+      {
+         "tag": "library",
+         "patterns": [
+            "is there any library",
+            "library facility",
+            "library facilities",
+            "do you have library",
+            "does the college have library facility",
+            "college library",
+            "where can i get books",
+            "book facility",
+            "Where is library",
+            "Library",
+            "Library information",
+            "Library books information",
+            "Tell me about library",
+            "how many libraries",
+            "Library Resources",
+            "Library details",
+            "How many Library collections"
+         ],
+         "responses": [
+            "The total collection of library is asfollows<br>Noof volumes 44627<br>No of titles15313<br>ReferenceBooks 2993<br>Video Cassettes100<br>Compact Disk2759<br>Book Bank Books1448<br>Bounded Back Journals 350<br>TechnicalReports 1100"
+         ]
+      },
+      {
+         "tag": "infrastructure",
+         "patterns": [
+            "how is college infrastructure",
+            "infrastructure",
+            "college infrastructure"
+         ],
+         "responses": [
+            "Our University has Excellent Infrastructure. Campus is clean. Good IT Labs With Good Speed of Internet connection"
+         ]
+      },
+      {
+         "tag": "canteen",
+         "patterns": [
+            "food facilities",
+            "canteen facilities",
+            "canteen facility",
+            "is there any canteen",
+            "Is there a cafetaria in college",
+            "Does college have canteen",
+            "Where is canteen",
+            "where is cafetaria",
+            "canteen",
+            "Food",
+            "Cafetaria"
+         ],
+         "responses": [
+            "Our university has canteen with variety of food available"
+         ]
+      },
+      {
+         "tag": "menu",
+         "patterns": [
+            "food menu",
+            "food in canteen",
+            "Whats there on menu",
+            "what is available in college canteen",
+            "what foods can we get in college canteen",
+            "food variety",
+            "What is there to eat?"
+         ],
+         "responses": [
+            "we serve Franky, Locho, Alu-puri, Kachori, Khavsa Thaali and many more on menu Idli Dosa,Puri,Pongal Vadai Tea  Coffee Variety rice Noodles Fried rice "
+         ]
+      },
+      {
+         "tag": "placement",
+         "patterns": [
+            "What is college placement",
+            "Which companies visit in college",
+            "What is average package",
+            "companies visit",
+            "package",
+            "About placement",
+            "placement",
+            "recruitment",
+            "companies",
+            "Which companies are comes for the placement",
+            "CSE placement companies",
+            "CSE placement"
+         ],
+         "responses": [
+            "Tata Consultancy Services, Chennai<br> SysArc Infomatix Pvt. Ltd., Chennai<br> HCL Technologies Ltd., Chennai<br>Wipro Technologies, Bangalore<br>IBS Software Services Ltd., Trivandru <br>Hindustan Software Limited., Chennai<br>To know about placement visit <a target='https://aamec.in'>here</a>"
+         ]
+      },
+      {
+         "tag": "sem",
+         "patterns": [
+            "exam dates",
+            "exam schedule",
+            "When is semester exam",
+            "Semester exam timetable",
+            "sem",
+            "semester",
+            "exam",
+            "when is exam",
+            "exam timetable",
+            "exam dates",
+            "when is semester"
+         ],
+         "responses": [
+            "Here is the Academic Calendar <a target='https://aamec.in'>website</a>"
+         ]
+      },
+      {
+         "tag": "admission",
+         "patterns": [
+            "what is the process of admission",
+            "what is the admission process",
+            "How to take admission in your college",
+            "What is the process for admission",
+            "admission",
+            "admission process"
+         ],
+         "responses": [
+            "Application can also be submitted online through the Unversity's  <a target='https://aamec.in'>website</a>"
+         ]
+      },
+      {
+         "tag": "scholarship",
+         "patterns": [
+            "scholarship",
+            "Is scholarship available",
+            "scholarship engineering",
+            "scholarship it",
+            "scholarship ce",
+            "scholarship mechanical",
+            "scholarship civil",
+            "scholarship chemical",
+            "scholarship for AI/ML",
+            "available scholarships",
+            "scholarship for computer engineering",
+            "scholarship for IT engineering",
+            "scholarship for mechanical engineering",
+            "scholarship for civil engineering",
+            "scholarship for chemical engineering",
+            "list of scholarship",
+            "comps scholarship",
+            "IT scholarship",
+            "mechanical scholarship",
+            "civil scholarship",
+            "chemical scholarship",
+            "automobile scholarship",
+            "first year scholarship",
+            "second year scholarship",
+            "third year scholarship",
+            "fourth year scholarship"
+         ],
+         "responses": [
+            "Many government scholarships are supported by our university. For details and updates visit <a target='https://aamec.in'>here</a>"
+         ]
+      },
+      {
+         "tag": "facilities",
+         "patterns": [
+            "What facilities college provide",
+            "College facility",
+            "What are college facilities",
+            "facilities",
+            "facilities provided"
+         ],
+         "responses": [
+            "Our university's Engineering department provides fully AC Lab with internet connection, smart classroom, Auditorium, library,canteen"
+         ]
+      },
+      {
+         "tag": "college intake",
+         "patterns": [
+            "max number of students",
+            "number of seats per branch",
+            "number of seats in each branch",
+            "maximum number of seats",
+            "maximum students intake",
+            "What is college intake",
+            "how many stundent are taken in each branch",
+            "seat allotment",
+            "seats"
+         ],
+         "responses": [
+            "For IT, Computer and extc 90 per branch and seat may be differ for different department."
+         ]
+      },
+      {
+         "tag": "uniform",
+         "patterns": [
+            "college dress code",
+            "college dresscode",
+            "what is the uniform",
+            "can we wear casuals",
+            "Does college have an uniform",
+            "Is there any uniform",
+            "uniform",
+            "what about uniform",
+            "do we have to wear uniform"
+         ],
+         "responses": [
+            "ENTER YOUR OWN COLOUR DRESS ALLOWED IN UNIVERSITY UNIFORM CIRCULER"
+         ]
+      },
+      {
+         "tag": "committee",
+         "patterns": [
+            "what are the different committe in college",
+            "different committee in college",
+            "Are there any committee in college",
+            "Give me committee details",
+            "committee",
+            "how many committee are there in college"
+         ],
+         "responses": [
+            "For the various committe in college contact this number: 7010239965"
+         ]
+      },
+      {
+         "tag": "random",
+         "patterns": [
+            "I love you",
+            "Will you marry me",
+            "Do you love me"
+         ],
+         "responses": [
+            "I am not program for this, please ask appropriate query"
+         ]
+      },
+      {
+         "tag": "swear",
+         "patterns": [
+            "fuck",
+            "bitch",
+            "shut up",
+            "hell",
+            "stupid",
+            "idiot",
+            "dumb ass",
+            "asshole",
+            "fucker"
+         ],
+         "responses": [
+            "please use appropriate language",
+            "Maintaining decency would be appreciated"
+         ]
+      },
+      {
+         "tag": "vacation",
+         "patterns": [
+            "holidays",
+            "when will semester starts",
+            "when will semester end",
+            "when is the holidays",
+            "list of holidays",
+            "Holiday in these year",
+            "holiday list",
+            "about vacations",
+            "about holidays",
+            "When is vacation",
+            "When is holidays",
+            "how long will be the vacation"
+         ],
+         "responses": [
+            "Academic calender is given to you by your class-soordinators after you join your respective classes"
+         ]
+      },
+      {
+         "tag": "sports",
+         "patterns": [
+            "sports and games",
+            "give sports details",
+            "sports infrastructure",
+            "sports facilities",
+            "information about sports",
+            "Sports activities",
+            "please provide sports and games information"
+         ],
+         "responses": [
+            "Valley ball<br>Basketball<br>Football<br>Table tennis<br> Shuttlecock<br>Cricket<br>Carrom <br>Athletes<br>"
+         ]
+      },
+      {
+         "tag": "salutaion",
+         "patterns": [
+            "okk",
+            "okie",
+            "nice work",
+            "well done",
+            "good job",
+            "thanks for the help",
+            "Thank You",
+            "its ok",
+            "Thanks",
+            "Good work",
+            "k",
+            "ok",
+            "okay"
+         ],
+         "responses": [
+            "I am glad I helped you",
+            "welcome, anything else i can assist you with?"
+         ]
+      },
+      {
+         "tag": "task",
+         "patterns": [
+            "what can you do",
+            "what are the thing you can do",
+            "things you can do",
+            "what can u do for me",
+            "how u can help me",
+            "why i should use you"
+         ],
+         "responses": [
+            "I can answer to low-intermediate questions regarding college",
+            "You can ask me questions regarding college, and i will try to answer them"
+         ]
+      },
+      {
+         "tag": "ragging",
+         "patterns": [
+            "ragging",
+            "is ragging practice active in college",
+            "does college have any antiragging facility",
+            "is there any ragging cases",
+            "is ragging done here",
+            "ragging against",
+            "antiragging facility",
+            "ragging juniors",
+            "ragging history",
+            "ragging incidents"
+         ],
+         "responses": [
+            "We are Proud to tell you that our college provides ragging free environment, and we have strict rules against ragging"
+         ]
+      }
+   ]
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chatbot</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+              rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+              rel="stylesheet">
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Audiowide:wght@400;500;600&display=swap');
+            
+            .container{
+                overflow: hidden;
+            }
+        .fixed-panel {
+            min-height:600px;
+            max-height:600px;
+            min-width:100%;
+            max-width:100%;
+            background-color: #19313c;
+            color: white;
+            overflow: auto;
+        }
+
+        .media-list {
+            overflow: auto;
+            clear: both;
+            display: table;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: normal;
+            line-break: strict;
+        }
+
+        .panel {
+            position: relative;
+            margin-bottom: 20px;
+            border-radius: 25px;
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+            width:100%;
+        }
+
+        .panel-info {
+            border-color: #0c2735;
+        }
+        .media-body{
+            padding:20px;
+            font-size:1.6rem;
+            font-family:'Audiowide','sans-serif';
+            font-weight: 900;
+           
+        }
+
+        .panel-info>.panel-heading {
+            color: white;
+            background-color: #0c2735;
+            border-color: #0c2735;
+        }
+
+        .panel-footer {
+            padding: 10px 15px;
+            background-color: #0c2735;
+            border-top: 1px solid #0c2735;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px
+        }
+      #chatPanel{
+          width: 100%;
+          position: relative;
+      }
+
+        body {
+          background: #000;
+        }
+        
+       
+        .tables{
+            height: 100vh;
+            padding: 10px;
+        }
+        .content{
+            color:#0f0;
+            font-weight:bold;
+            letter-spacing:1.2px;
+            font-family:'Poppins','sans-serif';
+            font-size:1.6rem;
+        }
+
+        body{
+    height: 100vh;
+    overflow:hidden;
+        }
+
+        
+   
+    .circle {
+      position: absolute;
+      bottom: 0;
+      width: 20px;
+      z-index:-100;
+      aspect-ratio: 1/1;
+      background: #0f0;
+      box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0,
+        0 0 50px #0f0;
+      border-radius: 50%;
+      animation: animate 5s linear forwards;
+    }
+
+    @keyframes animate {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+      }
+    }
+    .circle::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      width: 50%;
+      left: 25%;
+      height: 100vh;
+      opacity: 0.5;
+      background: linear-gradient(#0f0, transparent);
+    }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-12 col-md-5 col-lg-5 col-sm-12 text-center tables">
+                
+                    <div class="circles">
+                       <img src="data:image/jpeg;base64,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k0RZwqN/Zd9XyyP7r5R/pAPxWeloY49WMDSdzzPid1toiQERERZREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREX/9k=" width="300" height="340" alt="">
+                    </div>
+            
+                    <div class="content">
+                        AAMEC has been conceived as a pace setter in the field of engineering education with noble ideas and objectives viz., “Character, Health and Education”. True to its motto, the college gives due emphasis not only on education of its students but also on character formation. Thus discipline is the watch word. The college spares efforts in moulding the students into good citizens, capable technocrats and self disciplined youth so that they are well equipped for their role as nation builders.To become a centre of excellence in the field of computer science and engineering through high quality education and produce intellectual computer engineers for industry and research.
+                </div>
+
+                    </div>
+                <div class="col-12 col-md-7 col-lg-7 col-sm-12 chat">
+                    <h3 class="text-center text-primary">HackAI Chatbot 4.0</h3>
+                    <div id="chatPanel" class="panel panel-info">
+                        <div class="panel-heading">
+                            <strong><span class="glyphicon glyphicon-globe"></span>😎 Allow Me To Talk 🔥🔥🔥 </strong>
+                        </div>
+                        <div class="panel-body fixed-panel">
+                            <ul class="media-list">
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            <form method="post" id="chatbot-form">
+                                <div class="input-group">
+                                    <input type="text"
+                                           class="form-control"
+                                           placeholder="Enter Message"
+                                           name="userReply"
+                                           id="messageText"
+                                           autofocus/>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button" id="chatbot-form-btn"><ion-icon name="send"></ion-icon>Send</button>
+                                        <button class="btn btn-info" type="button" id="chatbot-form-btn-clear"><ion-icon name="nuclear"></ion-icon>Clear</button>
+                                        <button class="btn btn-warning" type="button" id="chatbot-form-btn-voice"><ion-icon name="play"></ion-icon>Voice</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script>var exports = {};</script>
+        <script src="https://unpkg.com/speech-to-text@0.7.4/lib/index.js"></script>
+        <script>
+
+function lines() {
+      let sizeW = Math.random() * 12;
+      let duration = Math.random() * 3;
+      let e = document.createElement("div");
+      e.setAttribute("class", "circle");
+      document.body.appendChild(e);
+
+      e.style.width = 2 + sizeW + "px";
+
+      e.style.left = Math.random() * +innerWidth + "px";
+
+      e.style.animationDuration = 2 + duration + "px";
+
+      setTimeout(() => {
+        document.body.removeChild(e);
+      }, 5000);
+    }
+
+    setInterval(() => {
+      lines();
+    }, 200);
+
+
+
+        $(function () {
+            var synth = window.speechSynthesis;
+
+            var msg = new SpeechSynthesisUtterance();
+            var voices = synth.getVoices();
+            msg.voice = voices[0];
+            msg.rate = 1;
+            msg.pitch = 1;
+
+            $('#chatbot-form-btn').click(function (e) {
+                e.preventDefault();
+                $('#chatbot-form').submit();
+            });
+            $('#chatbot-form-btn-clear').click(function (e) {
+                e.preventDefault();
+                $('#chatPanel').find('.media-list').html('');
+            });
+            $('#chatbot-form-btn-voice').click(function (e) {
+                e.preventDefault();
+
+                var onAnythingSaid = function (text) {
+                    console.log('Interim text: ', text);
+                };
+                var onFinalised = function (text) {
+                    console.log('Finalised text: ', text);
+                    $('#messageText').val(text);
+                };
+                var onFinishedListening = function () {
+                    // $('#chatbot-form-btn').click();
+                };
+
+                try {
+                    var listener = new SpeechToText(onAnythingSaid, onFinalised, onFinishedListening);
+                    listener.startListening();
+
+                    setTimeout(function () {
+                        listener.stopListening();
+                        if ($('#messageText').val()) {
+                            $('#chatbot-form-btn').click();
+                        }
+                    }, 5000);
+                } catch (error) {
+                    console.log(error);
+                }
+            });
+
+            $('#chatbot-form').submit(function (e) {
+                e.preventDefault();
+                var message = $('#messageText').val();
+                $(".media-list").append(
+                    '<li class="media"><div class="media-body"><div class="media"><div style = "text-align:right; color:#2EFE2E;" class="media-body">' +
+                    message + '</div></div></div></li>');
+
+                $.ajax({
+                    type: "POST",
+                    url: "/chat",
+                    data: $(this).serialize(),
+                    success: function (response) {
+                        $('#messageText').val('');
+                        var answer = response.answer;
+                        console.log(answer);
+                        const chatPanel = document.getElementById("chatPanel");
+                        $(".media-list").append(
+                            '<li class="media"><div class="media-body"><div class="media"><div style = "color : white;" class="media-body">' +
+                            answer + '</div></div></div></li>');
+                        $(".fixed-panel").stop().animate({
+                            scrollTop: $(".fixed-panel")[0].scrollHeight
+                        }, 1000);
+
+                        msg.text = answer;
+                        speechSynthesis.speak(msg);
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+        </script>
+         <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+         <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+    </body>
+</html>
